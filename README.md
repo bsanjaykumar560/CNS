@@ -44,7 +44,7 @@ void main()
     printf("\n\tPLAIN TEXt: %s", plain);
     printf("\n \tENCRYPTED TEXT:");
     for(i=0, length = strlen(plain); i<length; i++)
-    {
+   {
         
         cipher[i]=plain[i] + key;
         if (isupper(plain[i]) && (cipher[i] > 'Z'))
@@ -71,5 +71,7 @@ void main()
 
 
 OUTPUT :-
+
+
 ![image](https://github.com/user-attachments/assets/4cafc737-1341-40a3-a5a5-fa63e6f153d4)
 
