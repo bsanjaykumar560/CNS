@@ -28,7 +28,7 @@ becomes C. To change a message back, each letter is replaced by the one three be
 
 
 ## PROGRAM :-
-```
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -57,24 +57,20 @@ void caesarDecrypt(char *text, int key) {
 int main() {
     char message[100]; // Declare a character array to store the message
     int key;
-
     printf("Enter the message to encrypt: ");
     fgets(message, sizeof(message), stdin); // Read input from the user
 
-    printf("Enter the Caesar Cipher key (an integer): ");
+   printf("Enter the Caesar Cipher key (an integer): ");
     scanf("%d", &key); // Read the key from the user
-
     // Encrypt the message using the Caesar Cipher
     caesarEncrypt(message, key);
     printf("Encrypted Message: %s\n", message);
-
     // Decrypt the message back to the original
     caesarDecrypt(message, key);
     printf("Decrypted Message: %s\n", message);
-
     return 0;
 }
-```
+
 
 
 
